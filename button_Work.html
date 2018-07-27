@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>button_on_off</title>
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="jquery4.css">
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+     <style>
+         .background{
+            width: 100px;
+            height: 50px;
+            border-radius: 30px;
+            border: 1px solid gray;
+            margin:100px auto ;
+            background-color: lightgreen;
+         }
+         .btn{
+            width: 40px;
+            height: 40px;
+            border-radius: 40px;
+            margin:5px 5px;
+            border:1px solid gray;
+            background-color: white;    
+         }
+         .proba{
+            background-color: white;
+            margin:5px 55px;
+            transition: 0.14s;
+           }
+           .ex{
+           
+            background-color: red;
+           }   
+     </style>
+         
+<body>
+
+
+    <div class="background">
+      <div class="btn">
+      </div>
+
+    </div>
+    
+<script>
+var btn = $('.btn');
+var background = $('.background');
+var a;
+
+
+btn.click(function those() {
+        a = 1;
+        btn.toggleClass('proba').css('transition', '0.14s')
+        background.toggleClass('ex')
+       
+          
+})
+   
+
+</script>
+</body>
+
+
+</html>
